@@ -1,0 +1,29 @@
+body{
+     padding-top: 65px;
+ }
+
+.circ{
+
+
+    width : 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+    margin-top: 5px;
+
+}
+.circ:hover{
+    box-shadow: 0 0 0 3px #f00;
+}
+
+.baseMargin{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.marketingCarouselImg img {
+    width: auto;
+    height: 225px;
+    max-height: 225px; }
