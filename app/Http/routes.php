@@ -24,16 +24,18 @@
 |
 */
 
+// Api routes
+
+Route::any('api/marketing-image', 'ApiController@marketingImageData');
+Route::any('api/profile', 'ApiController@profileData');
+Route::any('api/user', 'ApiController@userData');
+Route::any('api/widget', 'ApiController@widgetData');
+
+
+Route::group(['middleware' => ['web']], function () {
     // admin routes
 
     Route::get('admin', ['as' => 'admin', 'uses' => 'AdminController@index']);
-
-    // Api routes
-
-    Route::any('api/marketing-image', 'ApiController@marketingImageData');
-    Route::any('api/profile', 'ApiController@profileData');
-    Route::any('api/user', 'ApiController@userData');
-    Route::any('api/widget', 'ApiController@widgetData');
 
     // auth routes
 
@@ -87,4 +89,5 @@
 
     Route::resource('widget', 'WidgetController', ['except' => ['show', 'create']]);
 
+});
 
