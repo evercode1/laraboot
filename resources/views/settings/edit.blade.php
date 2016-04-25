@@ -15,7 +15,8 @@
 
     <div class="pull-right">
 
-        <a href="/password/email">
+        
+        <a href="{{ url('/password/reset') }}">
 
             <button type="button" class="btn btn-lg btn-primary">
 
